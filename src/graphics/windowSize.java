@@ -1,11 +1,11 @@
 package graphics;
 
 import java.awt.*;
+import map.MapSize;
 
 public enum windowSize {
-	//RESOLUTION(),
 	MENU(400, 500),
-	GAME(1200, 800);
+	GAME(map.MapSize.getMapX(), map.MapSize.getMapY());
 	
 	private int sizeX;
 	private int sizeY;
